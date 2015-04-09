@@ -1,0 +1,139 @@
+<section id="order">
+<div class="divider" id="section1">
+  <div class="container">
+    <!-- Headings -->
+    <div class="row">
+    <h1>Order Form</h1>
+    </div>
+<!-- panel preview -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                 <div class="panel-body form-horizontal payment-form">
+               		 <h3>Customer Info</h3>
+                     <div class="cform" id="contact-form">
+			<form action="order.php" method="post" role="form" class="contactForm">
+                        <div class="form-group">
+                       		<label for="customer" class="col-sm-5 control-label">Customer#</label>
+                        	<div class="col-sm-7">
+                            <input type="number" class="form-control" id="store" name="customer">
+                                </div>
+                     	</div>
+                    	<div class="form-group">
+                       		<label for="phone" class="col-sm-5 control-label">Phone#</label>
+                        	<div class="col-sm-7">
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        	</div>
+                    	</div>
+                     	<div class="form-group">
+                        	<label for="date" class="col-sm-5 control-label">Delivery Date</label>
+                        	<div class="col-sm-7">
+                            <input type="date" class="form-control" id="date" name="date">
+                        	</div>
+                    	</div>
+                    <div class="panel-body form-horizontal payment-form">
+                	<h3>Fuel Order</h3>
+                    <div class="form-group">
+                       <label for="unleaded" class="col-sm-5 control-label">Unleaded</label>
+                        <div class="col-sm-7">
+                            <input type="message" class="form-control" id="unleaded" name="unleaded">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                       <label for="mid" class="col-sm-5 control-label">Mid-Grade</label>
+                        <div class="col-sm-7">
+                            <input type="message" class="form-control" id="mid" name="mid">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                       <label for="premium" class="col-sm-5 control-label">Premium</label>
+                        <div class="col-sm-7">
+                            <input type="message" class="form-control" id="premium" name="premium">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                       <label for="hwy" class="col-sm-5 control-label">Hwy Diesel</label>
+                        <div class="col-sm-7">
+                            <input type="message" class="form-control" id="hwy" name="hwy">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                       <label for="dyed" class="col-sm-5 control-label">Dyed Diesel</label>
+                        <div class="col-sm-7">
+                            <input type="message" class="form-control" id="dyed" name="dyed">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                       <label for="rec" class="col-sm-5 control-label">Rec 90</label>
+                        <div class="col-sm-7">
+                            <input type="message" class="form-control" id="rec" name="rec">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                       <label for="ker" class="col-sm-5 control-label">Kerosen</label>
+                        <div class="col-sm-7">
+                            <input type="message" class="form-control" id="ker" name="ker">
+                        </div>
+                     </div>
+                     <div class="form-group">
+    			<label for="message"class="col-sm-5 control-label">Special Instructions</label>
+    			  <div class="col-sm-7">
+    				<textarea class="form-control" rows="3"></textarea>
+    			  </div>
+  			</div>
+                     </div>
+                     </form>
+                     </div>
+                <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                            <button type="button" class="btn btn-warning preview-add-button">
+                                <span class="glyphicon glyphicon-plus"></span> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+ <!-- / panel preview -->
+        <div class="col-sm-7">
+            <h4>Fuel Order Preview:</h4>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table class="table preview-table">
+                            <thead>
+                                <tr>
+                                    <th>Unleaded</th>
+                                    <th>Mid-Grade</th>
+                                    <th>Premium</th>
+                                    <th>Hwy Diesel</th>
+                                    <th>Dyed Diesel</th>
+                                    <th>Rec 90</th>
+                                    <th>Kerosen</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody> <!-- preview content goes here-->
+                        </table>
+                    </div>                            
+                </div>
+            </div>
+             <div class="row text-right">
+                <div class="col-xs-12">
+                    <h4>Total: <strong><span class="preview-total"></span></strong></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr style="border:1px dashed #dddddd;">
+                    <div id="success">
+                    <button type="submit" class="btn btn-warning btn-block">Submit all and finish</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+ </div>
+ </div>
+ </div>
+ </section>
