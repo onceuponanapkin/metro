@@ -1,10 +1,6 @@
-/*
-  Jquery Validation using jqBootstrapValidation
-   example is taken from jqBootstrapValidation docs
-  */
 $(function() {
  
- $("input,textarea").jqBootstrapValidation(
+ $("input,textarea").cfvalidation(
     {
      preventSubmit: true,
      submitError: function($form, event, errors) {
@@ -16,22 +12,19 @@ $(function() {
        // get values from FORM
        var name = $("input#customer").val();
        var phone = $("input#phone").val();
-var unleaded = $("input#unleaded").val();
-var mid = $("input#mid").val();
-var premium = $("input#premium").val();
-var hwy = $("input#hyw").val();
-var dyed = $("input#dyed").val();
-var rec = $("input#rec").val();
-var kerosene = $("input#ker").val();
+       var unleaded = $("input#unleaded").val();
+       var mid = $("input#mid").val();
+       var premium = $("input#premium").val();
+       var hwy = $("input#hyw").val();
+       var dyed = $("input#dyed").val();
+       var rec = $("input#rec").val();
+       var kerosene = $("input#ker").val();
        var message = $("textarea#message").val();
-        var firstName = name; // For Success/Failure Message
-           // Check for white space in name for Success/Fail message
-        if (firstName.indexOf(' ') >= 0) {
-       firstName = name.split(' ').slice(0, -1).join(' ');
+      
          }
      $.ajax({
                 type: "POST",
-                url: "order.php",
+                url: "orderform.php",
                 data: {unleaded: unleaded, mid: mid, premium: premium, hwy: hwy, dyed: dyed, rec: rec, kerosene: ker, message: message},
                 cache: false,
                 success: function(msg){
